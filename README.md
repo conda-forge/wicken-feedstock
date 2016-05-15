@@ -5,7 +5,7 @@ Home: https://github.com/ioos/wicken
 
 Package license: Apache 2.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Maps metadata concepts to concrete specifications and file formats
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wicken-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/wicken-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/wicken-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wicken-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wicken-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wicken-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wicken/badges/version.svg)](https://anaconda.org/conda-forge/wicken)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wicken/badges/downloads.svg)](https://anaconda.org/conda-forge/wicken)
 
 
 Updating wicken-feedstock
