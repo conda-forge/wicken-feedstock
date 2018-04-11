@@ -1,39 +1,41 @@
 {% set version = "0.2.0" %}
 
 package:
-    name: wicken
-    version: {{ version }}
+  name: wicken
+  version: {{ version }}
 
 source:
-    git_url: https://github.com/ioos/wicken.git
-    git_tag: v{{ version }}
+  url: https://github.com/ioos/wicken/archive/v{{ version }}.tar.gz
+  sha256: 1f74111b50b232dabecaa6940a1eab813933758e171796e65a70e7c70d6998aa
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - lxml
-        - petulant-bear
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - lxml
+    - petulant-bear
 
 test:
-    imports:
-        - wicken
+  imports:
+    - wicken
 
 about:
-    home: https://github.com/ioos/wicken
-    license:  Apache 2.0
-    summary: Maps metadata concepts to concrete specifications and file formats
+  home: https://github.com/ioos/wicken
+  license:  Apache 2.0
+  license_file: COPYING
+  summary: 'Maps metadata concepts to concrete specifications and file formats'
 
 extra:
-    recipe-maintainers:
-        - benjwadams
-        - daf
-        - kwilcox
-        - lukecampbell
-        - ocefpaf
+  recipe-maintainers:
+    - benjwadams
+    - daf
+    - kwilcox
+    - lukecampbell
+    - ocefpaf
